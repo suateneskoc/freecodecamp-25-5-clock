@@ -26,7 +26,7 @@ function App() {
   }, [sessionLength, breakLength]);
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-sm flex-col justify-center px-3 text-center">
+    <div className="mx-auto flex min-h-screen max-w-sm flex-col justify-center px-4 text-center">
       <h1 className="mb-10 text-5xl font-bold">25 + 5 Clock</h1>
       <div className="mb-10 flex justify-evenly">
         {/* Session control */}
@@ -93,7 +93,7 @@ function App() {
       </div>
 
       {/* Timer */}
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mb-10">
         <div className="mx-auto w-max rounded-t bg-gray-200 px-3 py-1 text-sm text-gray-600">
           <label id="timer-label" htmlFor="time-left">
             {isSessoin ? "Session" : "Break"}
@@ -155,6 +155,10 @@ function App() {
           src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
         />
       </div>
+
+      <a href="https://github.com/suateneskoc/freecodecamp-25-5-clock" className="mb-4">
+        GitHub
+      </a>
     </div>
   );
 }
